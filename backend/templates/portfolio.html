@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block title %}Portfolio - My Work{% endblock %}
+{% block content %}
+<section>
+    <h2 class="text-3xl font-bold mb-8 text-center">My Projects</h2>
+    <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Example project -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 flex flex-col items-center">
+            <img src="/static/img/project1.png" alt="Project 1" class="w-full h-40 object-cover rounded mb-4">
+            <h3 class="text-xl font-semibold mb-2">Project Title</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">Short project description goes here.</p>
+            <a href="#" target="_blank" class="text-blue-600 hover:underline">View Project</a>
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+</section>
+{% endblock %} 
